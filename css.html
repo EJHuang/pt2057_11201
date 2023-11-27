@@ -29,6 +29,26 @@
         input[type="button"]{
             color: blue;
         }
+        /* 同層相鄰選擇器(使用+符號) */
+        .f1+p{
+            color: red;
+        }
+        /* 同層全體選擇器(使用~符號) */
+        .g1~p{
+            color: green;
+        }
+        /* 偽類選擇器(使用:符號) */
+        .h1:hover{
+            color: red;
+        }
+        /* 偽元素選擇器(使用::符號) */
+        .i1::before{
+            content: "超連結:";
+        }
+        /* 群組選擇器(使用,符號) */
+        #div1,#div2{
+            color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -41,5 +61,48 @@
     <a href="#" id="c1">ID選擇器</a>
     <h2>屬性選擇器</h2>
     <input type="button" value="屬性選擇器">
+    <h2>同層相鄰選擇器(使用+符號)</h2>
+    <ul class="f1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul class="f1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <h2>同層全體選擇器(使用~符號)</h2>
+    <ul class="g1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul class="g1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <h2>偽類選擇器(使用:符號)</h2>
+    <a href="#" class="h1">國立台中科技大學</a>
+    <h2>偽元素選擇器(使用::符號)</h2>
+    <a href="#" class="i1">a1</a>
+    <a href="#" class="i1">a2</a>
+    <a href="#" class="i1">a3</a>
+    <h2>群組選擇器(使用,符號)</h2>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
 </body>
 </html>
