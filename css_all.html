@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Text */
+        /* Text文字 */
         /* 文字顏色 */
         .text_color{
-            color:red;
+            color: red;
         }
         /* 文字對齊 */
         .text_align{
@@ -16,18 +16,18 @@
         }
         /* 行高 */
         .text_line{
-            line-height: 30px;
+            line-height: 100px;
         }
         /* 文字線段 */
-        .text_decortain{
+        .text_decoration{
+            /* 都不要 */
+            /* text-decoration: none; */
             /* 底線 */
             /* text-decoration: underline; */
-            /* 上面 */
+            /* 上線 */
             /* text-decoration: overline; */
-            /* 劃掉 */
-            /* text-decoration: line-through; */
-            /* 都不要 */
-            text-decoration: none;
+            /* 刪除 */
+            text-decoration: line-through;
         }
         /* 縮排 */
         .text_indent{
@@ -37,47 +37,12 @@
         .text_letter{
             letter-spacing: 30px;
         }
-        /* 字體樣式 */
-        .font_style{
-            font-style: italic;
-        }
-        /* 字體粗細 */
-        .font_weight{
-            font-weight: bold;
-        }
-        /* 字體大小 */
-        .font_size{
-            font-size: 30px;
-        }
-        /* 字型 */
-        .font_family{
-            font-family: "標楷體";
-        }
-        /* 未訪問 */
-        .a_link:link{
-            color: red;
-        }
-        /* 訪問過 */
-        .a_link:visited{
-            color: green;
-        }
-        /* 移入 */
-        .a_link:hover{
-            color: yellow;
-        }
-        /* 點下去 */
-        .a_link:active{
-            color: orange;
-        }
+
     </style>
 </head>
 <body>
-    <div class="text_color text_align text_line text_decortain text_indent text_letter">
+    <div class="text_color text_align text_line text_decoration text_indent text_letter">
         text文字
     </div>
-    <div class="font_style font_weight font_size font_family">
-        font字型
-    </div>
-    <a href="#" class="a_link">Link連結</a>
 </body>
 </html>
