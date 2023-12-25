@@ -72,7 +72,63 @@
         .a_link:active{
             color: blue;
         }
-
+        /* list列表 */
+        /* 類別 */
+        .list{
+            list-style-type: upper-roman;
+            /* 位置 */
+            list-style-position: inside;
+            /* 圖片 */
+            list-style-image: url('list.png');
+        }
+        /* table表格 */
+        .table_css{
+            /* 合併框線 */
+            border-collapse: collapse;
+        }
+        td{
+            /* 左右對齊 */
+            text-align: center;
+            /* 上下對齊 */
+            vertical-align: center;
+        }
+        /* 奇數行 */
+        tr:nth-child(odd){
+            color: red;
+        }
+        /* 偶數行 */
+        tr:nth-child(even){
+            color: blue;
+        }
+        /* 外間距 */
+        .div_margin{
+            /* 上下左右 */
+            margin:10px;
+            /* 上下，左右 */
+            margin:10px 50px;
+            /* 上，右，下，左 */
+            margin: 5px 10px 15px 20px;
+        }
+        /* 留白 */
+        .div_padding{
+            padding:20px;
+        }
+        /* 邊框 */
+        .div_border{
+            /* 框線粗細 */
+            border-width: 1px;
+            /* 框線類別 */
+            border-style: dotted;
+            /* 框線顏色 */
+            border-color: red;
+        }
+        /* display顯示 */
+        .display1{
+            display: inline;
+        }
+        .display2{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -83,5 +139,35 @@
         font字型
     </div>
     <a href="#" class="a_link">Link連結</a>
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <table class="table_css" border="1" cellspacing="0" cellpadding="0" width="300" height="300">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <div class="div_margin">margin</div>
+    <div class="div_padding">padding</div>
+    <div class="div_border">border</div>
+    <div class="display1">div1</div>
+    <div class="display1">div2</div>
+    <span class="display2">span1</span>
+    <span class="display2">span2</span>
+    <hr>
+    <span>span1</span>
+    <span style="display:none">span2</span>
+    <span>span3</span>
+    <br>
+    <span>span4</span>
+    <span style="visibility: hidden;">span5</span>
+    <span>span6</span>
 </body>
 </html>
