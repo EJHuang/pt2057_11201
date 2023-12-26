@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Text */
+        /* Text文字 */
         /* 文字顏色 */
         .text_color{
-            color:red;
+            color: red;
         }
         /* 文字對齊 */
         .text_align{
@@ -16,18 +16,18 @@
         }
         /* 行高 */
         .text_line{
-            line-height: 30px;
+            line-height: 100px;
         }
         /* 文字線段 */
-        .text_decortain{
+        .text_decoration{
+            /* 都不要 */
+            /* text-decoration: none; */
             /* 底線 */
             /* text-decoration: underline; */
-            /* 上面 */
+            /* 上線 */
             /* text-decoration: overline; */
-            /* 劃掉 */
-            /* text-decoration: line-through; */
-            /* 都不要 */
-            text-decoration: none;
+            /* 刪除 */
+            text-decoration: line-through;
         }
         /* 縮排 */
         .text_indent{
@@ -37,8 +37,10 @@
         .text_letter{
             letter-spacing: 30px;
         }
+        /* 字型 */
         /* 字體樣式 */
         .font_style{
+            /* 斜體 */
             font-style: italic;
         }
         /* 字體粗細 */
@@ -53,13 +55,14 @@
         .font_family{
             font-family: "標楷體";
         }
+        /* Link連結 */
         /* 未訪問 */
         .a_link:link{
-            color: red;
+            color: green;
         }
         /* 訪問過 */
         .a_link:visited{
-            color: green;
+            color: red;
         }
         /* 移入 */
         .a_link:hover{
@@ -67,17 +70,104 @@
         }
         /* 點下去 */
         .a_link:active{
-            color: orange;
+            color: blue;
+        }
+        /* list列表 */
+        /* 類別 */
+        .list{
+            list-style-type: upper-roman;
+            /* 位置 */
+            list-style-position: inside;
+            /* 圖片 */
+            list-style-image: url('list.png');
+        }
+        /* table表格 */
+        .table_css{
+            /* 合併框線 */
+            border-collapse: collapse;
+        }
+        td{
+            /* 左右對齊 */
+            text-align: center;
+            /* 上下對齊 */
+            vertical-align: center;
+        }
+        /* 奇數行 */
+        tr:nth-child(odd){
+            color: red;
+        }
+        /* 偶數行 */
+        tr:nth-child(even){
+            color: blue;
+        }
+        /* 外間距 */
+        .div_margin{
+            /* 上下左右 */
+            margin:10px;
+            /* 上下，左右 */
+            margin:10px 50px;
+            /* 上，右，下，左 */
+            margin: 5px 10px 15px 20px;
+        }
+        /* 留白 */
+        .div_padding{
+            padding:20px;
+        }
+        /* 邊框 */
+        .div_border{
+            /* 框線粗細 */
+            border-width: 1px;
+            /* 框線類別 */
+            border-style: dotted;
+            /* 框線顏色 */
+            border-color: red;
+        }
+        /* display顯示 */
+        .display1{
+            display: inline;
+        }
+        .display2{
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="text_color text_align text_line text_decortain text_indent text_letter">
+    <div class="text_color text_align text_line text_decoration text_indent text_letter">
         text文字
     </div>
     <div class="font_style font_weight font_size font_family">
         font字型
     </div>
     <a href="#" class="a_link">Link連結</a>
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <table class="table_css" border="1" cellspacing="0" cellpadding="0" width="300" height="300">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <div class="div_margin">margin</div>
+    <div class="div_padding">padding</div>
+    <div class="div_border">border</div>
+    <div class="display1">div1</div>
+    <div class="display1">div2</div>
+    <span class="display2">span1</span>
+    <span class="display2">span2</span>
+    <hr>
+    <span>span1</span>
+    <span style="display:none">span2</span>
+    <span>span3</span>
+    <br>
+    <span>span4</span>
+    <span style="visibility: hidden;">span5</span>
+    <span>span6</span>
 </body>
 </html>
